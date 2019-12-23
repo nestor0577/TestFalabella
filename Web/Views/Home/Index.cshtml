@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="~/Scripts/TestFalabella/Index.js"></script>
+
+<div class="jumbotron">
+
+    <h2>TEST Falabella</h2>
+
+    <div class="form-group">
+        <select id="slArea" class="form-control">
+            <option value="0">Seleccione...</option>
+            <option value="1">Gerencia Comercial</option>
+            <option value="2">Asesor de Ventas</option>
+        </select>
+    </div>
+
+    <div id="divGerenciaComercial" hidden="hidden">
+
+        <div class="form-group">
+            <label name="slCompania">Compañia</label>
+            <select id="slCompania" name="slCompania" class="form-control"></select>
+        </div>
+
+        <div class="form-group">
+            <label name="txtNombreProducto">Nombre Producto</label><input type="text" id="txtNombreProducto" class="form-control" name="txtNombreProducto" />
+            <label>Descripcion Producto</label><input type="text" id="txtDescripcionProducto" class="form-control" name="txtDescripcionProducto" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" id="btnGuardarProducto">Guardar</button>
+        </div>
+
+    </div>
+
+    <div id="divFormulario" hidden="hidden">
+
+        <table>
+            <tr>
+                <th>
+                    <div class="form-group mb-2">
+                        <label>Nombres</label><input type="text" id="txtNombres" class="form-control" name="txtNombres" />
+                        <label>Numero Movil</label><input type="number" id="txtMovil" class="form-control" name="txtMovil" />
+                    </div>
+                </th>
+                <th>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label>Direccion</label><input type="text" id="txtDireccion" class="form-control" name="txtDireccion" />
+                        <label>Edad</label><input type="number" id="txtEdad" class="form-control" name="txtEdad" />
+                    </div>
+                </th>
+
+            </tr>
+
+        </table>
+
+        <div class="form-group">
+            <div class="form-group" id="divProdComp">
+                <label name="slCompaniaUsr">Compañia</label>
+                <select id="slCompaniaUsr" name="slCompaniaUsr" class="form-control"></select>
+                <label name="slProducto">Producto</label>
+                <select id="slProducto" name="slProducto" class="form-control"></select>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="btn btn-primary" id="btnGuardarCliente">Guardar</button>
+        </div>
+
+
+    </div>
+
+    <br />
+
+</div>
+
+<div class="row">
+
+</div>
